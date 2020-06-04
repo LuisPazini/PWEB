@@ -1,0 +1,18 @@
+.formulario{
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px 20px;
+    background-color: hsla(140, 100%, 70%, 60%);
+    color: hsl(130, 100%, 20%);
+    margin: auto;
+}
+
+.pesquisa{
+    text-align: center;
+}
+
+.response{
+    text-align: center;
+}
+

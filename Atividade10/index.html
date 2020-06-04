@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="formulario">
+        <h1>Formulário principal</h1>
+        <hr>
+        <form id="formulario1" name="formulario1" onsubmit="return validar();">
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" minlength="10" required><br>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+            <label for="comentarios">Comentários:</label><br>
+            <textarea name="comentarios" cols="30" rows="10" style="resize: none; width: 100%;" minlength="20" required></textarea><br>
+            <div class="pesquisa">
+                <h2>Pesquisa</h2>
+                <p>Primeira vez nesta página?</p>
+                <input type="radio" name="p-vez" id="p-vez-sim" value="sim" required>
+                <label for="p-vez-sim">Sim</label>
+                <input type="radio" name="p-vez" id="p-vez-nao" value="nao" required>
+                <label for="p-vez-nao">Não</label>
+            </div>
+            <br>
+            <div class="response">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+            
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
