@@ -1,0 +1,130 @@
+*{
+    margin: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    padding: 2% 10%;
+    background: hsl(30, 100%, 30%) url("https://cdn.pixabay.com/photo/2016/12/26/13/47/wood-1932207_960_720.jpg");    
+    nop
+}
+
+#portifolio{
+    background-color: #fafafa;
+    width: 1000px;
+    height: 1414px;
+    padding: 5%;
+    border: 1px outset #777;
+    align-items: stretch;
+    box-shadow: 0 0 15px 0.1px #eee;
+}
+
+/*#portifolio:hover{
+    transform: rotateY(180deg);
+}*/
+
+/*@keyframes verVerso{
+    from {transform: rotateY(0);}
+    to {transform: rotateY(180deg)}
+    backface-visibility: hidden;
+}*/
+
+
+#portifolio .cabecalho{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.foto{
+    order: 1;
+    width: 20%;
+    border: 1px solid #777;
+    filter: saturate(.7);
+    filter: grayscale(.2);
+    border-radius: 15%;
+}
+
+#nome{
+    order: 2;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 70%;
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+
+#portifolio .conteudo{
+    position: absolute;
+    width: 100%;
+}
+
+table td{
+    border: none;
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+}
+
+.principal{
+    margin-top: 4%;
+    width: 25%;
+    height: 100%;
+}
+
+.fa{
+    font-size: 0.6em;
+}
+
+.checked{
+    color: orange;
+}
+
+.principal thead{
+    text-align: justify;
+}
+
+.principal .legendas{
+    margin-top: 2rem;
+}
+
+.principal .legendas td:nth-child(even)::before{
+    content: "- ";
+}
+
+.detalhes{
+    position: relative;
+    top: -550px;
+    left: 310px;
+    width: 65%;
+    height: 100%;
+}
+
+.detalhes article{
+    margin: 2rem 0 2rem;
+}
+
+.detalhes article h2, .detalhes article h3{
+    text-decoration: underline;
+}
+
+.detalhes li{
+    list-style: "- ";
+}
+
+.resumo pre{
+    font-variant: small-caps;
+    margin-left: -14%;
+}
+
+.escolaridade li{
+    font-variant: small-caps;
+}
+
+.experiencias h4{
+    font-variant: small-caps;
+}
