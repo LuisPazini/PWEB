@@ -5,33 +5,51 @@
 }
 
 body{
-    padding: 2% 10%;
-    background: hsl(30, 100%, 30%) url("https://cdn.pixabay.com/photo/2016/12/26/13/47/wood-1932207_960_720.jpg");    
-    nop
+    padding: 2% 0;
+    background: hsl(30, 100%, 30%) url("https://cdn.pixabay.com/photo/2016/12/26/13/47/wood-1932207_960_720.jpg");
+    display: flex;
+    flex-flow: row nowrap;
 }
 
-#portifolio{
-    background-color: #fafafa;
+.portifolio{
+    background-color: transparent;
     width: 1000px;
     height: 1414px;
-    padding: 5%;
-    border: 1px outset #777;
-    align-items: stretch;
-    box-shadow: 0 0 15px 0.1px #eee;
+    perspective: 2000px;
+    position: relative;
 }
 
-/*#portifolio:hover{
-    transform: rotateY(180deg);
-}*/
-
-/*@keyframes verVerso{
-    from {transform: rotateY(0);}
-    to {transform: rotateY(180deg)}
+.portifolio-frente, .portifolio-verso{
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
     backface-visibility: hidden;
-}*/
+    border: 1px outset #777;
+    box-shadow: 0 0 15px 0.1px #eee;
+    padding: 5%;
+    align-items: stretch;
+}
 
+.portifolio-verso{
+    transform: rotateY(180deg);
+}
 
-#portifolio .cabecalho{
+.girar{
+    width: 10%;
+    height: 100%;
+    margin: auto 0;
+    text-shadow: 2px 2px 2px black;
+}
+
+.girar p{
+    text-align: center;
+    line-height: 100%;
+}
+
+.portifolio .cabecalho{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -59,7 +77,7 @@ body{
     text-decoration: underline;
 }
 
-#portifolio .conteudo{
+.portifolio .conteudo{
     position: absolute;
     width: 100%;
 }
