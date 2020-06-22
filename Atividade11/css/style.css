@@ -1,0 +1,11 @@
+.titulo{
+    margin: 50px auto 20px;
+    text-align: center;
+}
+
+#cursos{
+    display: block;
+    margin: auto;
+    background-color: #eee;
+    border: 2px inset;
+}
